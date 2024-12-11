@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JS Tutorial</title>
+
+    </head>
+    <body>
+        <div class="square" id="box">
+
+        </div>
+        <button id="btn1">
+            Show
+        </button>
+        <button id="btn2">
+            Hide
+        </button>
+        <style>
+            .square{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                visibility: visible;
+            }
+        </style>
+        <script>
+            const box = document.getElementById('box')
+            const btn1 = document.getElementById('btn1')
+            const btn2 = document.getElementById('btn2')
+            btn1.onclick = function(){
+                box.style.visibility='visible'
+            }
+            btn2.onclick = function(){
+                box.style.visibility='hidden'
+            }
+        </script>
+    </body>
+</html>

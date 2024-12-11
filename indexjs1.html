@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>JS Tutorial</title>
+    </head>
+    <body>
+        <h1 id="wording">
+            How are You?
+        </h1>
+        <button id="header">
+            Click here
+        </button>
+        <script>
+            document.getElementById("header").onclick = function(){
+                document.getElementById("wording").textContent = document.getElementById("wording").textContent === "How are You?" ? "Hello There.." : "How are You?" ;
+            }
+        </script>
+    </body>
+</html>

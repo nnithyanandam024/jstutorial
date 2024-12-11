@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>JS Tutorial</title>
+    </head>
+    <body>
+        <img src="img/Screenshot 2024-10-27 225306.png" id="Silentvoice" alt="" height="150px" width="250px">
+        <button id="img1">
+            img 1
+        </button>
+        <button id="img2">
+            img 2
+        </button>
+        <script>
+            const btn1 = document.getElementById('img1')
+            const btn2 = document.getElementById('img2')
+            const img = document.getElementById('Silentvoice')
+            btn1.onclick = function(){
+                img.src="img/Screenshot 2024-10-27 225306.png"
+            }
+            btn2.onclick = function() {
+                img.src="img/Screenshot 2024-10-27 225436.png"
+            }
+        </script>
+    </body>
+</html>

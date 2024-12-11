@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JS Tutorial</title>
+    </head>
+    <body>
+        <div class="square" id="box">
+        </div>
+        <button id="btn">
+            Click here
+        </button>
+        <style>
+            .square{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                transition: 2s ease-in-out;
+            }
+
+            .circle
+            {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                border-radius: 50%;
+            }
+        </style>
+        <script>
+            const box = document.getElementById('box')
+            const btn = document.getElementById('btn')
+            btn.onclick = function() {
+                box.classList.toggle('circle')
+            }
+        </script>
+    </body>
+</html>

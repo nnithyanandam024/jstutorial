@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            JS Tutorial
+        </title>
+    </head>
+    <body>
+        <div class="square" id="box">
+
+        </div>
+        <button id="btn1">
+            Increase
+        </button>
+        <button id="btn2">
+            Decrease
+        </button>
+        <style>
+            .square{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                margin-top: 200px;
+                margin-left: 100px;
+                margin-bottom: 100px;
+                transition: all 2s ease-in-out;
+            }
+        </style>
+        <script>
+            const box = document.getElementById('box')
+            const btn1 = document.getElementById('btn1')
+            const btn2 = document.getElementById('btn2')
+            btn1.onclick = function(){
+                box.style.height='300px'
+                box.style.width='300px'
+            }
+            btn2.onclick = function(){
+                box.style.height='200px'
+                box.style.width='200px'
+            }
+        </script>
+    </body>
+</html>
